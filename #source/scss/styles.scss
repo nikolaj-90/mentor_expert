@@ -1,21 +1,102 @@
-// ! ======================== Обнуление стилей
+//!  ======================== Обнуление стилей
 @import "_nullstyles";
+/* //* ======================== Шрифты ======================== */
+@import "_fonts"; // HelveticaNeue
+/* //* ======================== Оболочка и ограничивающий контейнер */
+@import "_wrapper-block";
+/* //* ======================== Картинка _ibg */
+@import "_ibg";
 
-// *  ======================== Wrapper
-.wrapper {
+$page-color: #ffd868;
+$content-color: #721b65;
+.page__skill {
 }
-// *  ======================== Ограничивающий контейнер
-[class*="__container"] {
+
+/* //* ======================== Pages */
+
+.skill {
+	background-color: $page-color;
+	/* padding: 150px 0px; */
 }
-// *  ======================== Адаптивная картинка
-._ibg {
-   position: relative;
-   & img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      object-fit: cover;
-   }
+
+.skill {
+	&__container {
+		overflow: hidden;
+	}
+
+	&__body {
+		display: flex;
+	}
+
+	&__content {
+		flex: 0 0 63%;
+		position: relative;
+		padding: 159px 0px;
+	}
+
+	&__title {
+		font-family: HelveticaNeue;
+		font-size: 80px;
+		font-weight: 700;
+		line-height: calc(90 / 80 * 100%);
+		color: $content-color;
+		/* padding: 0px 0px 0px 150px; */
+		&:not(:last-child) {
+			margin: 0px 0px 20px 150px;
+		}
+	}
+
+	&__subtitle {
+		font-family: HelveticaNeue;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: calc(24 / 20 * 100%);
+		color: rgba(0, 0, 0, 0.6);
+		padding-left: 200px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__bottons {
+	}
+
+	&__image {
+		padding: 0px 0px 0px 44%;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+			object-position: top;
+			transform: translate(-13%, 0);
+		}
+	}
+}
+.skill__bottons {
+	margin: 0px 0px 0px 200px;
+	display: flex;
+
+	& a {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-family: HelveticaNeue;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: calc(25 / 20 * 100%);
+		padding: 16px 18px;
+		min-width: 223px;
+		border-radius: 10px;
+	}
+	& a:not(:last-child) {
+		margin: 0px 24px 0px 0px;
+	}
+}
+.botton-white {
+	background-color: #fff;
+	color: $content-color;
+}
+.botton-red {
+	background-color: $content-color;
+	color: #fff;
 }
