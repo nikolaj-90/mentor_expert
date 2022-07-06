@@ -154,13 +154,42 @@ h6 {
 }
 @media (max-width: 975px) {
   .page__sertification {
-    margin: 30px 0px 20px;
+    margin: 30px 0px;
   }
 }
-@media (max-width: 570px) {
-  .page__sertification {
-    margin: 5px 0px 10px;
+
+.page__offer {
+  margin: 100px 0px 86px 0px;
+}
+@media (max-width: 769px) {
+  .page__offer {
+    margin-top: 70px;
   }
+}
+@media (max-width: 430px) {
+  .page__offer {
+    margin: 30px 0px 35px 0px;
+  }
+}
+
+/* //* ============= Модыфикатор кнопка _btn */
+._btn {
+  display: flex;
+}
+._btn a {
+  display: inline-flex;
+  justify-content: center;
+  font-family: HelveticaNeue;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120.8333333333%;
+  align-items: center;
+  text-align: center;
+  min-width: 219px;
+  padding: 16px 10px;
+  background-color: #721b65;
+  color: #fff;
+  border-radius: 10px;
 }
 
 /* //* =========================================== Skill ============================================== */
@@ -244,11 +273,6 @@ h6 {
   }
 }
 @media (max-width: 430px) {
-  .skill__title {
-    /* &:not(:last-child) {
-    	margin-bottom: 0px;
-    } */
-  }
   .skill__title {
     font-size: 32px;
   }
@@ -431,7 +455,7 @@ h6 {
 }
 @media (max-width: 430px) {
   .sertification__title {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 .sertification__subtitle {
@@ -456,27 +480,11 @@ h6 {
     margin: 0px 0px 15px;
   }
 }
-.sertification__bottun {
-  display: flex;
+.sertification__botton {
   justify-content: end;
 }
-.sertification__bottun a {
-  display: inline-flex;
-  justify-content: center;
-  font-family: HelveticaNeue;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 120.8333333333%;
-  align-items: center;
-  text-align: center;
-  min-width: 219px;
-  padding: 16px 10px;
-  background-color: #721b65;
-  color: #fff;
-  border-radius: 10px;
-}
 @media (max-width: 570px) {
-  .sertification__bottun a {
+  .sertification__botton a {
     flex: 1 1 100%;
     font-size: 20px;
     padding: 10px;
@@ -512,6 +520,11 @@ h6 {
   padding: 30px 0px 40px 0px;
   text-align: center;
 }
+@media (max-width: 415px) {
+  .presentation__body {
+    padding: 30px 0px;
+  }
+}
 .presentation__title {
   font-family: HelveticaNeue;
   font-weight: 500;
@@ -521,12 +534,33 @@ h6 {
   text-align: center;
   margin: 0px 0px 40px 0px;
 }
+@media (max-width: 930px) {
+  .presentation__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 530px) {
+  .presentation__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 415px) {
+  .presentation__title {
+    font-size: 28px;
+    margin: 0px 0px 30px 0px;
+  }
+}
 .presentation__body-link {
   font-family: HelveticaNeue;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   color: #721b65;
+}
+@media (max-width: 415px) {
+  .presentation__body-link {
+    font-size: 18px;
+  }
 }
 
 .arrow {
@@ -561,11 +595,44 @@ h6 {
 .row-presentation__items {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -20px;
+  margin: -10px -15px;
+  justify-content: center;
+}
+@media (max-width: 975px) {
+  .row-presentation__items {
+    margin: 0px -10px -10px;
+  }
+}
+@media (max-width: 415px) {
+  .row-presentation {
+    margin-bottom: 35px;
+  }
 }
 .row-presentation__item {
   flex: 0 1 33.333%;
-  padding: 0px 20px;
+  padding: 10px 15px;
+  min-width: 180px;
+}
+@media (max-width: 975px) {
+  .row-presentation__item {
+    flex: 1 1 50%;
+  }
+  .row-presentation__item:not(:last-child) {
+    padding: 0px 5px 10px;
+  }
+  .row-presentation__item:last-child {
+    flex: 0 1 50%;
+    padding: 0px 5px 10px;
+  }
+}
+@media (max-width: 630px) {
+  .row-presentation__item {
+    flex: 1 1 100%;
+  }
+  .row-presentation__item:last-child {
+    flex: 1 1 100%;
+    padding-bottom: 0;
+  }
 }
 
 .item-presentation__image {
@@ -579,16 +646,130 @@ h6 {
   max-width: 100%;
   opacity: 0.8;
 }
+@media (max-width: 630px) {
+  .item-presentation__image {
+    padding: 60% 0px 0px 0px;
+  }
+}
 
 .image-block__text {
   position: relative;
   font-family: HelveticaNeue;
   font-weight: 500;
-  font-style: 22px;
+  font-size: 22px;
   line-height: 122.7272727273%;
   text-align: center;
   background: #721b65;
   height: 100%;
   color: #fff;
   padding: 16px 20px;
+}
+@media (max-width: 340px) {
+  .image-block__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 760px) {
+  .image-block__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .image-block__text {
+    padding: 10px;
+  }
+}
+
+/* //* =========================================== Offer section ============================================== */
+.offer-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 126px;
+}
+@media (max-width: 430px) {
+  .offer-row {
+    padding-bottom: 80px;
+  }
+}
+.offer-row__title {
+  font-family: HelveticaNeue;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 121.6666666667%;
+  color: rgb(105, 105, 105);
+}
+.offer-row__title span {
+  color: #000;
+}
+.offer-row__title:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+@media (max-width: 750px) {
+  .offer-row__title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 430px) {
+  .offer-row__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 350px) {
+  .offer-row__title {
+    font-size: 32px;
+  }
+}
+.offer-row__text {
+  font-family: HelveticaNeue;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+}
+.offer-row__text:not(:last-child) {
+  margin: 0px 0px 60px 0px;
+}
+@media (max-width: 430px) {
+  .offer-row__text {
+    font-size: 16px;
+  }
+  .offer-row__text:not(:last-child) {
+    margin: 0px 0px 35px 0px;
+  }
+}
+.offer-row__botton {
+  justify-content: center;
+}
+@media (max-width: 570px) {
+  .offer-row__botton a {
+    flex: 1 1 100%;
+    padding: 10px;
+  }
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+}
+.social-row__icon {
+  display: flex;
+  width: 111px;
+  height: 111px;
+  background-color: #721b65;
+  border-radius: 50%;
+  padding: 25px;
+}
+.social-row__icon img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.social-row__icon:not(:last-child) {
+  margin: 0px 4% 0px 0px;
+}
+@media (max-width: 470px) {
+  .social-row__icon {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+  }
 }
