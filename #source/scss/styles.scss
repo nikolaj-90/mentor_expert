@@ -612,9 +612,11 @@ $content-color: #721b65;
 		background-color: $content-color;
 		border-radius: 50%;
 		padding: 25px;
+		
 		img {
 			max-width: 100%;
 			object-fit: contain;
+			
 		}
 		&:not(:last-child) {
 			margin: 0px 4% 0px 0px;
