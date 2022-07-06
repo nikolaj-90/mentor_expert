@@ -255,7 +255,8 @@ $content-color: #721b65;
 		flex-direction: row-reverse;
 		@media (max-width: 975px) {
 			& {
-				display: block;
+				display: flex;
+				flex-direction: column-reverse;
 			}
 		}
 	}
